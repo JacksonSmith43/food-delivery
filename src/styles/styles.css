@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;  /* Horizontal alignment. */
+    align-items: center;   /* Vertical alignment. */
+    height: 100vh; /* Entire screen. */
+}
+
+.address-input {
+    width: 50%;
+}
+
+.form-label {
+    padding-right: 1rem;
+}
+
+.btn {
+    margin-left: 1rem;
+}
+
+#address-input-label:focus,
+.form-label:focus,
+.btn:focus {
+    outline: 0.15rem solid red;
+}
