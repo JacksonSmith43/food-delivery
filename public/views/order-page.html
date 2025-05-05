@@ -6,13 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <title>GetFat.at Order Page</title>
     <link rel="icon" type="image/icon" href="/src/assets/logo.png">
-    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/order-page.css">
     <script src="/src/scripts/order-page.js"></script>
 </head>
 
 <body>
+    <div class="container-fluid ">
+
+        <div class="row ">
+            <div class="col-2 accordion filter-view">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFilter" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseFilter">
+                            Filter
+                        </button>
+                    </h3>
+                    <div id="panelsStayOpen-collapseFilter" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Price
+                        </div>
+                        <div class="accordion-body">
+                            Restaurant
+                        </div>
+                        <div class="accordion-body">
+                            Categorie
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9 main-view">
+                <div class="search-bar">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseSearchBar" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseSearchBar">
+                                    Search bar
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseSearchBar" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <input class="form-control order-search-bar" id="order-search-bar-label" type="text"
+                                        placeholder="Burger">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categories-view">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h3> <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseCategories" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseCategories">
+                                    Categorie
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseCategories" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-restaurants-view">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h3> <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseRestaurants" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseRestaurants">
+                                    All Restaurants
+                                </button>
+                            </h3>
+                            <div id="panelsStayOpen-collapseRestaurants" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
 </body>
 

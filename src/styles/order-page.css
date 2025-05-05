@@ -1,0 +1,23 @@
+.main-view,
+.filter-view {
+    /*display: flex;
+    justify-content: center;    
+    align-items: center;
+ */
+    margin-top: 2rem;
+    height: 100vh;
+    outline: 0.05rem solid red;
+}
+
+.main-view {
+    margin-right: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+
+}
+
+
+.filter-view {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    padding: 2rem 0rem 2rem 0rem;
+}
