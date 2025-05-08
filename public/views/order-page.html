@@ -29,13 +29,20 @@
                     </h3>
                     <div id="panelsStayOpen-collapseFilter" class="accordion-collapse collapse show">
                         <div class="accordion-body">
-                            Price
+                            <p>Price</p>
+                            <input type="range" value="0" min="1" max="200"
+                                oninput="this.nextElementSibling.value = this.value"> <!-- nextElementSibling refers to the next HTML element. -->
+                            <output id="price-value">0</output>
+                        </div>
+
+                        <div class="accordion-body">
+                            <p>Restaurant</p>
+                            <input class="form-control filter-restaurant" type="text" placeholder="Origano">
                         </div>
                         <div class="accordion-body">
-                            Restaurant
-                        </div>
-                        <div class="accordion-body">
-                            Categorie
+
+                            <p>Categorie</p>
+                            <input class="form-control filter-category" type="text" placeholder="burger">
                         </div>
                     </div>
                 </div>
