@@ -31,7 +31,8 @@
                         <div class="accordion-body">
                             <p>Price</p>
                             <input type="range" value="0" min="1" max="200"
-                                oninput="this.nextElementSibling.value = this.value"> <!-- nextElementSibling refers to the next HTML element. -->
+                                oninput="this.nextElementSibling.value = this.value">
+                            <!-- nextElementSibling refers to the next HTML element. -->
                             <output id="price-value">0</output>
                         </div>
 
@@ -56,7 +57,7 @@
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseSearchBar" aria-expanded="true"
                                     aria-controls="panelsStayOpen-collapseSearchBar">
-                                    Search bar
+                                    Search food
                                 </button>
                             </h3>
                             <div id="panelsStayOpen-collapseSearchBar" class="accordion-collapse collapse show">
@@ -87,17 +88,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="all-restaurants-view">
+                <div class="all-restaurants-view ">
                     <div class="accordion">
-                        <div class="accordion-item">
+                        <div class="accordion-item ">
                             <h3> <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseRestaurants" aria-expanded="true"
                                     aria-controls="panelsStayOpen-collapseRestaurants">
                                     All Restaurants
                                 </button>
                             </h3>
-                            <div id="panelsStayOpen-collapseRestaurants" class="accordion-collapse collapse show">
-                                <div class="accordion-body">
+                            <div id="panelsStayOpen-collapseRestaurants"
+                                class="row accordion-collapse collapse show container">
+                                <div class="accordion-body all-restaurants-container row">
+                                    <div class="col-4 origano-container">
+                                        <a href="/public/views/origano.html">
+                                            <img src="/src/assets/restaurants/origano.png">
+                                            <p>Origano</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 burger-specialist-container">
+                                        <a href="/public/views/burger-specialist.html">
+                                            <img src="/src/assets/restaurants/burger-specialist.png">
+                                            <p>Burger Specialist</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 pizza-crazy-container">
+                                        <a href="/public/views/pizza-crazy.html"></a>
+                                        <img src="/src/assets/restaurants/pizza-crazy.png">
+                                        <p>Pizza Crazy</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 indiana-spice-container">
+                                        <a href="/public/views/indiana-spice.html">
+                                            <img src="/src/assets/restaurants/indiana-spice.png">
+                                            <p>Indiana Spice</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 pizzeria-aladdin-container">
+                                        <a href="/public/views/pizzeria-aladdin.html">
+                                            <img src="/src/assets/restaurants/pizzeria-aladdin.png">
+                                            <p>Pizzeria Aladdin</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 flattened-hen-container">
+                                        <a href="/public/views/flattened-hen.html">
+                                            <img src="/src/assets/restaurants/flattened-hen.png">
+                                            <p>Flattened Hen</p>
+                                        </a>
+                                    </div>
 
                                 </div>
                             </div>
