@@ -21,14 +21,18 @@
     padding: 2rem 0rem 2rem 0rem;
 }
 
-img {
+.category-container .col-2 a img {
+    width: 50%;
+    height: 50%;
+}
+
+.all-restaurants-container .col-4 a img {
     width: 100%;
+    height: 70%;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
     color: white;
-}
-
-.all-restaurants-container {}
+} 
