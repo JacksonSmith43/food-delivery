@@ -73,5 +73,20 @@
             3,
             4
         ]
+    },
+    {
+        "id": 6,
+        "name": "Get Colesterol",
+        "postalCode": "1210",
+        "categoryId": [
+            2,
+            3,
+            4
+        ],
+        "dishId": [
+            2,
+            3,
+            4
+        ]
     }
 ]
