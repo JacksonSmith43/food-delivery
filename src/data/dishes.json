@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Tikka Masala",
+        "price": 8.5,
+        "restaurantId": 4,
+        "categoryId": 1
+    },
+    {
+        "id": 2,
+        "name": "Tonno Pizza",
+        "price": 8,
+        "restaurantId": [
+            1,
+            3,
+            5
+        ],
+        "categoryId": 2
+    },
+    {
+        "id": 3,
+        "name": "Schnitzel Huhn",
+        "price": 9,
+        "restaurantId": [
+            1,
+            2,
+            6
+        ],
+        "categoryId": [
+            3,
+            4
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Beyond Burger",
+        "price": 7,
+        "restaurantId": [
+            1,
+            2,
+            6
+        ],
+        "categoryId": 5
+    },
+    {
+        "id": 5,
+        "name": "Knoblauch Naan",
+        "price": 3,
+        "restaurantId": 4,
+        "categoryId": 1
+    }
+]

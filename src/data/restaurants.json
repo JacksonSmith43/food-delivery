@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "name": "Origano",
+        "postalCode": "1230",
+        "categoryId": [
+            3,
+            4,
+            5
+        ],
+        "dishId": [
+            2,
+            3,
+            4
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Burger Specialist",
+        "postalCode": "1020",
+        "categoryId": [
+            3,
+            4,
+            5
+        ],
+        "dishId": [
+            3,
+            4
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Pizza Crazy",
+        "postalCode": "1030",
+        "categoryId": [
+            2,
+            5
+        ],
+        "dishId": 2
+    },
+    {
+        "id": 4,
+        "name": "Indiana Spice",
+        "postalCode": "1110",
+        "categoryId": [
+            1
+        ],
+        "dishId": [
+            1,
+            5
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Pizzeria Aladdin",
+        "postalCode": "1200",
+        "categoryId": [
+            2,
+            5
+        ],
+        "dishId": 2
+    },
+    {
+        "id": 6,
+        "name": "Flattened Hen",
+        "postalCode": "1220",
+        "categoryId": [
+            3,
+            4,
+            5
+        ],
+        "dishId": [
+            3,
+            4
+        ]
+    }
+]
