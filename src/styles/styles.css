@@ -22,3 +22,7 @@
 .btn:focus {
     outline: 0.15rem solid red;
 }
+
+a{
+    text-decoration: none;
+}

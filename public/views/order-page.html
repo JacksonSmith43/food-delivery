@@ -43,7 +43,7 @@
                         <div class="accordion-body">
 
                             <p>Categorie</p>
-                            <input class="form-control filter-category" type="text" placeholder="burger">
+                            <input class="form-control filter-category" type="text" placeholder="Burger">
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,15 @@
                             </h3>
                             <div id="panelsStayOpen-collapseSearchBar" class="accordion-collapse collapse show">
                                 <div class="accordion-body">
-                                    <input class="form-control food-search-input" type="text" placeholder="Burger">
+                                    <input class="form-control" id="food-search-input" type="text" onkeyup="searchesFoods()" placeholder="Burger">
+
+                                    <ul id="food-search-list">
+                                        <li><a href="#">Tikka Masala</a></li>
+                                        <li><a href="#">Tonno Pizza</a></li>
+                                        <li><a href="#">Schnitzel Huhn</a></li>
+                                        <li><a href="#">Beyond Burger</a></li>
+                                        <li><a href="#">Knoblauch Naan</a></li>
+                                    </ul>
                                 </div>
                             </div>
 
