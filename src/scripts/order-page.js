@@ -1,4 +1,7 @@
 addEventListener("DOMContentLoaded", (event) => {
+    const foodSearchInput = document.getElementById("food-search-input");
+    const foodSearchList = document.querySelectorAll("#food-search-list li");
+
 
     fetch('../data/dishes.json')
         .then(response => response.json()) // Once the file has successfuly been loaded the data from the HTTP response will be converted into a JSON object. // AKA: Convert the response to JSON (this returns a Promise).  
@@ -13,10 +16,8 @@ addEventListener("DOMContentLoaded", (event) => {
         });
 
 
-    const foodSearchInput = document.getElementById("food-search-input");
-    const foodSearchList = document.querySelectorAll("#food-search-list li");
-
     foodSearchInput.addEventListener("input", () => {
+
         const filter = foodSearchInput.value.toUpperCase();
 
         foodSearchList.forEach((li) => {

@@ -35,4 +35,26 @@ a {
     text-decoration: none;
     cursor: pointer;
     color: white;
-} 
+}
+
+li {
+    list-style: none;
+    background-color: rgb(73, 70, 70);
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border-bottom: 0.15rem solid rgb(163, 162, 162);
+    padding: 0.5rem 1rem;
+    margin: 0.35rem 0rem 0rem -1.5rem;
+
+}
+
+li:first-child {
+    margin-top: 1rem;
+}
+
+li:hover {
+    background-color: gray;
+    cursor: pointer;
+}
