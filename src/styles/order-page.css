@@ -1,11 +1,7 @@
 .main-view,
 .filter-view {
-    /*display: flex;
-    justify-content: center;    
-    align-items: center;
- */
     margin-top: 2rem;
-    outline: 0.05rem solid red;
+    /* outline: 0.05rem solid red;*/
 }
 
 .main-view {
