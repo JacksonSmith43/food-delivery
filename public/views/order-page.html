@@ -18,7 +18,7 @@
     <div class="container-fluid ">
 
         <div class="row ">
-            <div class="col-2 accordion filter-view">
+            <aside class="col-2 accordion filter-view">
                 <div class="accordion-item">
                     <h3 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -27,30 +27,31 @@
                             Filter
                         </button>
                     </h3>
+
                     <div id="panelsStayOpen-collapseFilter" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <p>Price</p>
-                            <input type="range" value="0" min="1" max="200"
+                        <fieldset class="accordion-body">
+                            <legend>Price</legend>
+                            <input type="range" value="0" min="0" max="200"
                                 oninput="this.nextElementSibling.value = this.value">
                             <!-- nextElementSibling refers to the next HTML element. -->
                             <output id="price-value">0</output>
-                        </div>
+                        </fieldset>
 
-                        <div class="accordion-body">
-                            <p>Restaurant</p>
+                        <fieldset class="accordion-body">
+                            <legend>Restaurant</legend>
                             <input class="form-control filter-restaurant" type="text" placeholder="Origano">
-                        </div>
-                        <div class="accordion-body">
+                        </fieldset>
 
-                            <p>Categorie</p>
+                        <fieldset class="accordion-body">
+                            <legend>Categorie</legend>
                             <input class="form-control filter-category" type="text" placeholder="Burger">
-                        </div>
+                        </fieldset>
                     </div>
                 </div>
-            </div>
+            </aside>
 
-            <div class="col-9 main-view">
-                <div class="search-bar">
+            <main class="col-9 main-view">
+                <section class="search-bar">
                     <div class="accordion">
                         <div class="accordion-item">
                             <h3 class="accordion-header">
@@ -60,6 +61,7 @@
                                     Search food
                                 </button>
                             </h3>
+
                             <div id="panelsStayOpen-collapseSearchBar" class="accordion-collapse collapse show">
                                 <div class="accordion-body">
                                     <div id="food-search">
@@ -68,16 +70,15 @@
                                         <ul id="food-search-list" tabindex="0"> </ul>
                                     </div>
                                     <div id="food-search-results">
-
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="categories-view">
+                <section class="categories-view">
                     <div class="accordion">
                         <div class="accordion-item">
                             <h3> <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -86,45 +87,61 @@
                                     Categorie
                                 </button>
                             </h3>
+
                             <div id="panelsStayOpen-collapseCategories"
                                 class="accordion-collapse collapse show container">
                                 <div class="accordion-body category-container row">
                                     <div class="col-2 indian-container">
                                         <a href="/public/views/category/indian.html">
-                                            <img src="/src/assets/category/indian.avif" class="indian-image">
-                                            <p>Indian</p>
+                                            <figure>
+                                                <img src="/src/assets/category/indian.avif" class="indian-image"
+                                                    alt="Picture of a curry.">
+                                                <figcaption>Indian</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-2 burger-container">
                                         <a href="/public/views/category/burgers.html">
-                                            <img src="/src/assets/category/burgers.png" class="burger-image">
-                                            <p>Burgers</p>
+                                            <figure>
+                                                <img src="/src/assets/category/burgers.png" class="burger-image"
+                                                    alt="Picture of a burger.">
+                                                <figcaption>Burgers</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-2 pizza-container">
                                         <a href="/public/views/category/pizza.html">
-                                            <img src="/src/assets/category/pizza.jpg" class="pizza-image">
-                                            <p>Pizzas</p>
+                                            <figure>
+                                                <img src="/src/assets/category/pizza.jpg" class="pizza-image"
+                                                    alt="Picture of a pizza.">
+                                                <figcaption>Pizzas</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-2 schnitzel-container">
                                         <a href="/public/views/category/schnitzel.html">
-                                            <img src="/src/assets/category/schnitzel.jpg" class="schnitzel-image">
-                                            <p>Schnitzel</p>
+                                            <figure>
+                                                <img src="/src/assets/category/schnitzel.jpg" class="schnitzel-image"
+                                                    alt="Picture of a schnitzel with chips.">
+                                                <figcaption>Schnitzel</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-2 vegan-container">
                                         <a href="/public/views/category/vegan.html">
-                                            <img src="/src/assets/category/vegan.jpg" class="vegan-image">
-                                            <p>Vegan</p>
+                                            <figure>
+                                                <img src="/src/assets/category/vegan.jpg" class="vegan-image"
+                                                    alt="Picture of a vegan steak and vegetable meal.">
+                                                <figcaption>Vegan</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="all-restaurants-view ">
+                </section>
+                <section class="all-restaurants-view ">
                     <div class="accordion">
                         <div class="accordion-item ">
                             <h3> <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -137,54 +154,76 @@
                                 class="accordion-collapse collapse show container">
                                 <div class="accordion-body all-restaurants-container row">
                                     <div class="col-4 origano-container">
-                                        <a href="/public/views/origano.html">
-                                            <img src="/src/assets/restaurants/origano.png">
-                                            <p>Origano</p>
+                                        <a href="/public/views/origano.html" aria-label="Origano Restaurant">
+                                            <figure>
+                                                <img src="/src/assets/restaurants/origano.png"
+                                                    alt="Picture of burgers and chips.">
+                                                <figcaption>Origano</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-4 burger-specialist-container">
-                                        <a href="/public/views/burger-specialist.html">
-                                            <img src="/src/assets/restaurants/burger-specialist.png">
-                                            <p>Burger Specialist</p>
+                                        <a href="/public/views/burger-specialist.html" aria-label="Burger Specialist">
+                                            <figure>
+                                                <img src="/src/assets/restaurants/burger-specialist.png"
+                                                    alt="Picture of a burger and different sorts of chips.">
+                                                <figcaption>Burger Specialist</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-4 pizza-crazy-container">
-                                        <a href="/public/views/pizza-crazy.html">
-                                            <img src="/src/assets/restaurants/pizza-crazy.png">
-                                            <p>Pizza Crazy</p>
+                                        <a href="/public/views/pizza-crazy.html" aria-label="Pizza Crazy">
+                                            <figure>
+                                                <img src="/src/assets/restaurants/pizza-crazy.png"
+                                                    alt="Picture of a pizza.">
+                                                <figcaption>Pizza Crazy</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-4 indiana-spice-container">
-                                        <a href="/public/views/indiana-spice.html">
-                                            <img src="/src/assets/restaurants/indiana-spice.png">
-                                            <p>Indiana Spice</p>
+                                        <a href="/public/views/indiana-spice.html" aria-label="Indiana Spice">
+                                            <figure>
+                                                <img src="/src/assets/restaurants/indiana-spice.png"
+                                                    alt="Picture of sushi and other Asian food.">
+                                                <figcaption>Indiana Spice</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-4 pizzeria-aladdin-container">
-                                        <a href="/public/views/pizzeria-aladdin.html">
-                                            <img src="/src/assets/restaurants/pizzeria-aladdin.png">
-                                            <p>Pizzeria Aladdin</p>
+                                        <a href="/public/views/pizzeria-aladdin.html" aria-label="Pizzeria Aladdin">
+                                            <figure>
+                                                <img src="/src/assets/restaurants/pizzeria-aladdin.png"
+                                                    alt="Picture of multiple pizzas and burgers.">
+                                                <figcaption>Pizzeria Aladdin</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-4 flattened-hen-container">
-                                        <a href="/public/views/flattened-hen.html">
-                                            <img src="/src/assets/restaurants/flattened-hen.png">
-                                            <p>Flattened Hen</p>
+                                        <a href="/public/views/flattened-hen.html" aria-label="Flattened Hen">
+                                            <figure>
+                                                <img src="/src/assets/restaurants/flattened-hen.png"
+                                                    alt="Picture of a Schnitzel.">
+                                                <figcaption>Flattened Hen</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                     <div class="col-4 get-colesterol-container">
-                                        <a href="/public/views/restaurants/get-colesterol.html">
-                                            <img src="/src/assets/restaurants/get-colesterol.png">
-                                            <p>Get Colesterol</p>
+                                        <a href="/public/views/restaurants/get-colesterol.html"
+                                            aria-label="Get Colesterol">
+                                            <figure>
+                                                <img src="/src/assets/restaurants/get-colesterol.png"
+                                                    alt="Picture of a burger with chips.">
+                                                <figcaption>Get Colesterol</figcaption>
+                                            </figure>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-            </div>
+            </main>
 
         </div>
     </div>

@@ -78,7 +78,16 @@ addEventListener("DOMContentLoaded", (event) => {
 
     function showRestaurants(restaurantName) {
         const restaurantList = document.getElementById("food-search-results");
-        restaurantList.innerHTML = ""; 
+        const restaurantTitle = document.createElement("h2");
+        restaurantList.innerHTML = "";
+
+        restaurantTitle.textContent = restaurantName;
+
+       /* if (restaurantName.length > 1) {
+            restaurantTitle.textContent = "Restaurants: " + restaurantName.split(","); // PROBLEM. 
+        }*/
+
+        restaurantList.appendChild(restaurantTitle);
     }
 })
 
